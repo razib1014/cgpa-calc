@@ -5,7 +5,7 @@ It's free to use and distribute.
 If  you want to change or use in your work/project, you're welcome to do so. 
 I'll appreciate if you include my name and link in your project.
 Date of creation : 08 December 2018
- -->
+-->
 <html>
 <head>
 	<title>CGPA Calculator</title>
@@ -90,7 +90,7 @@ Date of creation : 08 December 2018
 			</tr>
 			<tr>
 				<td class="tg-4c16" colspan="2">Your CGPA is :</td>
-				<td class="tg-yu2x"><input type="text" name="rescgpa"></td>
+				<td class="tg-yu2x" id="cgpadisp"></td>
 			</tr>
 			<tr>
 				<td class="tg-c3ow" colspan="3"><input type="reset" value="Reset"></td>
@@ -98,56 +98,6 @@ Date of creation : 08 December 2018
 		</table>
 
 	</form>
-	
-	<script type="text/javascript">
-		
-		function resultb(){
-
-			var x1=0, x2=0, x3=0, x4=0, x5=0, x6=0, x7=0, x8=0, x9=0, x10=0, x11=0, x12=0;
-			var cr1=0, cr2=0, cr3=0, cr4=0, cr5=0, cr6=0, cr7=0, cr8=0, cr9=0, cr10=0, cr11=0, cr12=0;
-			var pnt1=0, pnt2=0, pnt3=0, pnt4=0, pnt5=0, pnt6=0, pnt7=0, pnt8=0, pnt9=0, pnt10=0, pnt11=0, pnt12=0;
-			var sx0=0; var scr0=0; var result=0; var i=0;		
-			x1=Number(document.cgpacalc.gpa1.value);
-			x2=Number(document.cgpacalc.gpa2.value);
-			x3=Number(document.cgpacalc.gpa3.value);
-			x4=Number(document.cgpacalc.gpa4.value);
-			x5=Number(document.cgpacalc.gpa5.value);
-			x6=Number(document.cgpacalc.gpa6.value);
-			x7=Number(document.cgpacalc.gpa7.value);
-			x8=Number(document.cgpacalc.gpa8.value);
-			x9=Number(document.cgpacalc.gpa9.value);
-			x10=Number(document.cgpacalc.gpa10.value);
-			x11=Number(document.cgpacalc.gpa11.value);
-			x12=Number(document.cgpacalc.gpa12.value);
-			cr1=Number(document.cgpacalc.cr1.value);
-			cr2=Number(document.cgpacalc.cr2.value);
-			cr3=Number(document.cgpacalc.cr3.value);
-			cr4=Number(document.cgpacalc.cr4.value);
-			cr5=Number(document.cgpacalc.cr5.value);
-			cr6=Number(document.cgpacalc.cr6.value);
-			cr7=Number(document.cgpacalc.cr7.value);
-			cr8=Number(document.cgpacalc.cr8.value);
-			cr9=Number(document.cgpacalc.cr9.value);
-			cr10=Number(document.cgpacalc.cr10.value);
-			cr11=Number(document.cgpacalc.cr11.value);
-			cr12=Number(document.cgpacalc.cr12.value);
-			var pnt1 = x1*cr1;
-			var pnt2 = x2*cr2;
-			var pnt3 = x3*cr3;
-			var pnt4 = x4*cr4;
-			var pnt5 = x5*cr5;
-			var pnt6 = x6*cr6;
-			var pnt7 = x7*cr7;
-			var pnt8 = x8*cr8;
-			var pnt9 = x9*cr9;
-			var pnt10 = x10*cr10;
-			var pnt11 = x11*cr11;
-			var pnt12 = x12*cr12;
-			scr0=cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8+cr9+cr10+cr11+cr12;
-			sx0=pnt1+pnt2+pnt3+pnt4+pnt5+pnt6+pnt7+pnt8+pnt9+pnt10+pnt11+pnt12;
-			result=sx0/scr0;
-			document.cgpacalc.rescgpa.value=result.toFixed(2);
-		}
-	</script>
+	<script type="text/javascript" src="files/rscript.js"></script>
 </body>
 </html>
